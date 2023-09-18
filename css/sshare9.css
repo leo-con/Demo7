@@ -1,0 +1,202 @@
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  max-width: 1600px;
+  background-color: #f8f8f8;
+}
+
+.error-section.animated.bounceIn {
+  padding-top: 85px;
+}
+
+.webchat-security-key-form {
+  /*caja que acoje al boton y input box */
+  border: 0px solid red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100px;
+  position: relative !important;
+  right: 18px !important;
+}
+
+.webchat-security-key-form * {
+  font-family: cursive, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.input-group.input-group-lg {
+  display: block;
+}
+
+span.input-group-btn {
+  padding-top: 10px;
+}
+
+/*========================== Nuevo CSS ===============================*/
+
+.input--security-key {
+  border-radius: 20px !important;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+  color: #404040;
+  transition-duration: 0.2s;
+  margin-top: 43px;
+}
+
+.input-group {
+}
+
+.input-group::before {
+  content: "Â¿Desea iniciar la asistencia remota?";
+  border-width: 1px 1px 0 0;
+  top: -74px;
+  position: relative;
+  margin: 0px auto;
+  z-index: 99;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  font-style: normal;
+  color: #000000;
+}
+
+.input-group::after {
+  content: "Comparta su pantalla con un asesor de call center \A cuando presente algÃºn inconveniente en nuestro \A portal o desee profundizar en alguna funcionalidad. \A \A ComunÃ­quese previamente con nuestras lÃ­neas de \A atenciÃ³n e ingrese el cÃ³digo indicado por el asesor.";
+  border-width: 1px 1px 0 0;
+  white-space: pre;
+  top: -35px;
+  position: absolute;
+  margin: 0px auto;
+  z-index: 99;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+  color: #404040;
+}
+
+span.input-group-btn::before {
+  background-image: url("../img/iconos/signo-de-exclamacion.svg");
+  background-position: -140px 0px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -10px;
+  pointer-events: none;
+  transition: all 0.2s ease-out;
+  opacity: 1;
+  pointer-events: none;
+}
+
+span.input-group-btn::before {
+  content: "Tenga en cuenta que el asesor no podrÃ¡ \A ver los saldos de sus productos.";
+  border-width: 1px 1px 0 0;
+  top: auto;
+  white-space: pre;
+  position: absolute;
+  margin: 0px auto;
+  z-index: 99;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+  color: #404040;
+}
+
+.start-section {
+  margin-top: 170px;
+  position: relative;
+}
+
+.start-section::before {
+  background-image: url("/Documents/wcm?biblio=WCM_INTERNET_PERSONAS&nombre=icono_pantalla_cobrowse");
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -143px;
+  pointer-events: none;
+  transition: all 0.2s ease-out;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.webchat-security-key-form .start-section .error-section {
+  top: 145px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0;
+}
+
+.error-section::before {
+  content: "El cÃ³digo que ingresÃ³ no es vÃ¡lido.";
+  top: 120px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*=====================================================================*/
+
+span.input-group-btn {
+  text-align: center;
+}
+
+.btn-primary {
+  /**/
+  text-align: left;
+  width: 250px;
+  top: 50px;
+  /*background: linear-gradient(180deg, #ed1c27 0%, #a53131 100%);*/
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  font-style: normal;
+  border-radius: 40px !important;
+  background-color: #e1111c !important;
+  border: 0px;
+}
+
+.btn-primary:hover {
+  /*background: linear-gradient(180deg, #ed1c27 0%, #ffffff 100%);*/
+}
+
+.btn-primary:focus {
+  background: linear-gradient(180deg, #ff000d 0%, #ff000d 100%);
+}
+
+.input-group {
+  width: 300px;
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demo1</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700,300,400"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <script type="text/javascript" charset="utf-8" src="js/comunes.js"></script>
+    <div id="header"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-1 col-xs-10 col-xs-offset-1 col-sm-offset-0"></div>
+        <div class="col-sm-6 col-xs-6 col-xs-offset-1 col-sm-offset-0">
+          Por favor ingrese los datos para iniciar el chat!
+        </div>
+        <div class="col-sm-4 col-xs-4 col-xs-offset-1 col-sm-offset-0 text-right h4">
+          <a href="demo1.html">Pagina 1</a>
+        </div>
+      </div>
+      <div class="chat-form">
+        <div class="form-group">
+          <input
+            type="text"
+            id="firstName"
+            class="form-control"
+            placeholder="Nombre"
+            value="Leonel"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="lastName"
+            class="form-control"
+            placeholder="Apellido"
+            value="Contreras"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="customerEmail"
+            class="form-control"
+            placeholder="Email"
+            value="leonel.contreras@genesys.com"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="credicardNumber"
+            class="form-control"
+            placeholder="Credit Card"
+            value="4455778833442211"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="fechaVencimiento"
+            class="form-control"
+            placeholder="Fecha de Vencimiento"
+            value="08/25"
+          />
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary btn-block"
+          id="start-chat"
+          onclick="location.href='demo3.html';"
+        >
+          BOOK NOW
+        </button>
+        <div id="chatContainer" class="popup-box chat-popup" style="height: 300px"></div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
