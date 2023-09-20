@@ -4,6 +4,20 @@ $(document).ready(function () {
     console.log("The journey plugin is ready!");
     Genesys("command", "Journey.pageview", {});
   });
+  let currentUrl = window.location.href;
+  if (currentUrl.indexOf("demo2.html") > 0) {
+    console.log("activate formsTrack");
+    Genesys("command", "Journey.formsTrack", {
+      selector: "#formularioDemo",
+      formName: "user registration",
+      captureFormDataOnAbandon: true,
+      customAttributes: { isVip: true },
+      traitsMapper: [
+        { fieldName: "firstName", traitName: "givenName" },
+        { fieldName: "lastName", traitName: "familyName" },
+      ],
+    });
+  }
 });
 
 var intervalID;
